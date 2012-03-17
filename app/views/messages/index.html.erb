@@ -1,0 +1,9 @@
+#-*- coding: utf-8 -*-
+<h1>つぶやく</h1>
+<% if logged_in? %>
+<% form_tag messages_path do %>
+<%= submit_tag 'HelloWorldをツイートする' %>
+<% end %>
+<% else %>
+<%= link_to 'ログインする', login_path %>
+<% end %>

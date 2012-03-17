@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    
+  </head>
+  <body>
+    <%- flash.each do |name, msg| -%>
+      <div class='flash_<%= name %>'>
+        <%= msg %>
+      </div>
+    <%- end -%>
+    <div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+</code></pre>
